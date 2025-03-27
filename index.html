@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ödev #2 - Sdurmusoglu</title>
+    <title>Ödev #3 - Sdurmusoglu</title>
 
     <!-- normalize.css link ekleme -->
     <link
@@ -15,21 +15,6 @@
     />
 
     <!-- Google Fonts Ekleme -->
-    <!-- 
-      fontlarda rewalay için 700 ve roboto 400,500,700 seçildiğinde sans-serif olarak gösteriyor. 
-      ama tüm fontu yüklersek gerçek font gösteriyor. onun için tamamı yüklendi.
-      buraya o değerler için font seçim kodunuda ekliyorum.
-
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400,500,700&display=swap"
-        rel="stylesheet"
-      />
-
-      sanırım gpoogle font için ya tüm kalınlık yada tek kalınlık seçilmeye izin veriyor.
-      Çoklu seçim yapamıyorsunuz. 
-    -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,46 +25,35 @@
     <!-- styles.css link ekleme -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <!-- Header Section Start -->
-    <header id="header">
+    <header class="page-header">
       <div class="container">
         <!-- Logo Start -->
-        <div class="logo">
-          <!-- 
-            logo imaj olarakda alınabilir aşağıda ki gibi ...
-            <a href="#" id="navbar_logo"><img src="./images/Logo.png" alt="" /></a> 
-          -->
-          <a href="#">WEB<span>STUDIO</span></a>
-        </div>
+        <a href="#" class="logo">WEB<span>STUDIO</span></a>
         <!-- Logo End -->
 
         <!-- Navigation Start -->
-        <div class="nav">
-          <nav class="navbar">
-            <ul class="navbar-menu">
-              <li class="navbar-item">
-                <a href="#team" class="navbar-links medium">Studio</a>
-              </li>
-              <li class="navbar_item">
-                <a href="#portfolio" class="navbar-links medium">Portfolio</a>
-              </li>
-              <li class="navbar_item">
-                <a href="#footer" class="navbar-links medium">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="navbar">
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="#team" class="navbar-links medium">Studio</a>
+            </li>
+            <li class="navbar_item">
+              <a href="#portfolio" class="navbar-links medium">Portfolio</a>
+            </li>
+            <li class="navbar_item">
+              <a href="#footer" class="navbar-links medium">Contacts</a>
+            </li>
+          </ul>
+        </nav>
         <!-- Navigation End -->
 
         <!-- Address Information Start -->
-        <div class="adr-container">
-          <address>
-            <a href="#">info@devstudio.com</a>
-            <a href="#">+11 (000) 111-11-11</a>
-          </address>
-        </div>
+        <address>
+          <a href="#">info@devstudio.com</a>
+          <a href="#">+11 (000) 111-11-11</a>
+        </address>
         <!-- Adress Information End -->
       </div>
     </header>
@@ -88,24 +62,24 @@
     <!-- Main Section Start -->
     <main>
       <!-- Hero Section Start   -->
-      <section class="hero" id="hero">
-        <div class="hero_container">
-          <div class="row1">
-            <h1>
-              Effective Solutions <br />
-              for Your Business
-            </h1>
-          </div>
-          <div class="row2">
-            <button type="button">Order Service</button>
-          </div>
+      <section class="section hero" id="hero">
+        <div class="container">
+          <!-- <div class="row1"> -->
+          <h1>
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <!-- </div>
+          <div class="row2"> -->
+          <button type="button">Order Service</button>
+          <!-- </div> -->
         </div>
       </section>
       <!-- Hero Section End -->
 
       <!-- Services Section Start -->
-      <section class="services" id="services">
-        <div class="services-container">
+      <section class="section services" id="services">
+        <div class="container">
           <ul>
             <li>
               <h3>Strategy</h3>
@@ -141,8 +115,8 @@
       <!-- Services Section End -->
 
       <!-- Team Section Start -->
-      <section class="team" id="team">
-        <div class="team-container">
+      <section class="section team" id="team">
+        <div class="container">
           <h2>Our Team</h2>
 
           <ul>
@@ -200,18 +174,27 @@
       <!-- Team Section End -->
 
       <!-- Portfolio Section Start -->
-      <section class="portfolio" id="portfolio">
-        <div class="portfolio-container">
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
           <h2>Our Portfolio</h2>
 
-          <div class="row1">
+          <div class="box">
             <div class="card">
-              <img
-                src="./images/pc1_img.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
+              <div class="img-box">
+                <img
+                  src="./images/pc1_img.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+                <div class="hover-box">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
               <div class="content">
                 <h3>Banking App</h3>
                 <p>App</p>
@@ -219,12 +202,21 @@
             </div>
 
             <div class="card">
-              <img
-                src="./images/pc2_img.jpg"
-                alt="Cashless Payment"
-                width="360"
-                height="300"
-              />
+              <div class="img-box">
+                <img
+                  src="./images/pc2_img.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="hover-box">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
               <div class="content">
                 <h3>Cashless Payment</h3>
                 <p>Marketing</p>
@@ -232,27 +224,43 @@
             </div>
 
             <div class="card">
-              <img
-                src="./images/pc3_img.jpg"
-                alt="Meditation App"
-                width="360"
-                height="300"
-              />
+              <div class="img-box">
+                <img
+                  src="./images/pc3_img.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <div class="hover-box">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
               <div class="content">
                 <h3>Meditation App</h3>
                 <p>App</p>
               </div>
             </div>
-          </div>
 
-          <div class="row2">
             <div class="card">
-              <img
-                src="./images/pc4_img.jpg"
-                alt="Taxi Service"
-                width="360"
-                height="300"
-              />
+              <div class="img-box">
+                <img
+                  src="./images/pc4_img.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="hover-box">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
               <div class="content">
                 <h3>Taxi Service</h3>
                 <p>Marketing</p>
@@ -260,12 +268,21 @@
             </div>
 
             <div class="card">
-              <img
-                src="./images/pc5_img.jpg"
-                alt="Screen Illustrations"
-                width="360"
-                height="300"
-              />
+              <div class="img-box">
+                <img
+                  src="./images/pc5_img.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="hover-box">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
               <div class="content">
                 <h3>Screen Illustrations</h3>
                 <p>Desing</p>
@@ -273,12 +290,21 @@
             </div>
 
             <div class="card">
-              <img
-                src="./images/pc6_img.jpg"
-                alt="Online Courses"
-                width="360"
-                height="300"
-              />
+              <div class="img-box">
+                <img
+                  src="./images/pc6_img.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="hover-box">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
               <div class="content">
                 <h3>Online Courses</h3>
                 <p>Marketing</p>
@@ -292,8 +318,8 @@
     <!-- Main Section End -->
 
     <!-- Footer Section Start -->
-    <footer id="footer">
-      <div class="footer-container">
+    <footer class="page-footer">
+      <div class="container">
         <div class="ft-logo">
           <!-- Logo Start -->
           <!-- <a href="/"><img src="./images/Logo.png" alt="" /></a> -->
